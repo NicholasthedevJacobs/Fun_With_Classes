@@ -10,6 +10,8 @@ namespace FunWithClassesWorksheet
     {
         static void Main(string[] args)
         {
+            //Motherboard motherboard = new Motherboard();
+            
         }
     }
 }

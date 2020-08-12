@@ -19,7 +19,7 @@ namespace FunWithClassesWorksheet
         public Motherboard(string manufacturer, CPU processor, RAM temporaryMemory, HardDrive hardDrive, GPU gpu)
         {
             Applications slack = new Applications("Slack", "Messaging Service", 4.0, 0.512);
-
+            
             this.manufacturer = manufacturer;
             this.processor = processor;
             this.temporaryMemory = temporaryMemory;
@@ -28,14 +28,19 @@ namespace FunWithClassesWorksheet
         }
 
         //member methods
-        public void InstallApplication (Applications application)
+        public void InstallApplication(Applications application)
         {
-            storage.applicationsInHardDrive.Add(application);
-            if (application.requiredRam > temporaryMemory.totalGigabytes)
-            {
 
+            if (temporaryMemory.totalGigabytes > application.requiredRam)
+            {
+                storage.applicationsInHardDrive.Add(application);
             }
-            //Applications applications = new Applications("Spotify", "Music Streaming Service", 1.3, 0.86);
+            else
+            {
+                Console.WriteLine("Not enough RAM to run program");
+            }
+
+
         }
     }
 
