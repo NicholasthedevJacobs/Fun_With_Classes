@@ -21,7 +21,10 @@ namespace FunWithClassesWorksheet
         //member variables
         public void ProcessInstall(Applications app, HardDrive hardDrive, RAM ram)
         {
-            
+            //add app to the list on hard drive
+            ram.totalGigabytes -= app.requiredRam;
+            hardDrive.availableStorage -= app.requiredStorage;
+            hardDrive.applicationsInHardDrive.Add(app);
         }
         public bool CheckRequirements(Applications app, HardDrive hardDrive, RAM ram)
         {
