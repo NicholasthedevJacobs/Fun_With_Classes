@@ -15,12 +15,16 @@ namespace FunWithClassesWorksheet
         public double requiredStorage;
 
         //constructor
-        public Applications()
+        public Applications(string applicationName, string applicationType, double requiredRam, double requiredStorage)
         {
             applicationName = "Slack";
             applicationType = "Messaging Service";
             requiredRam = 4.0;  // in GB
             requiredStorage = 0.512;  //in GB
         }
+
+        //member methods
+        //public void 
+
     }
 }

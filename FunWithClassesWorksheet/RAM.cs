@@ -9,8 +9,8 @@ namespace FunWithClassesWorksheet
     class RAM
     {
         //member variables
-        double totalGigabytes;
-        string brand;
+        public double totalGigabytes;
+        public string brand;
 
         //constructor 
         public RAM()

@@ -18,14 +18,25 @@ namespace FunWithClassesWorksheet
         //constructor
         public Motherboard(string manufacturer, CPU processor, RAM temporaryMemory, HardDrive hardDrive, GPU gpu)
         {
+            Applications slack = new Applications("Slack", "Messaging Service", 4.0, 0.512);
+
             this.manufacturer = manufacturer;
             this.processor = processor;
             this.temporaryMemory = temporaryMemory;
             storage = hardDrive;
             graphics = gpu;
         }
-    }
 
-    //constructor
+        //member methods
+        public void InstallApplication (Applications application)
+        {
+            storage.applicationsInHardDrive.Add(application);
+            if (application.requiredRam > temporaryMemory.totalGigabytes)
+            {
+
+            }
+            //Applications applications = new Applications("Spotify", "Music Streaming Service", 1.3, 0.86);
+        }
+    }
 
 }

@@ -9,7 +9,7 @@ namespace FunWithClassesWorksheet
     class CPU
     {
         //member variables
-        string manufacturer;
-        string name;
+        public string manufacturer;
+        public string name;
     }
 }

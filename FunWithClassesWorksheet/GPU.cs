@@ -9,8 +9,8 @@ namespace FunWithClassesWorksheet
     class GPU
     {
         //member variables
-        string manufacturer;
-        double effectiveMemory;
+        public string manufacturer;
+        public double effectiveMemory;
 
     }
 }
