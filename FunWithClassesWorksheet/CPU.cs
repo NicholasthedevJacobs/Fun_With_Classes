@@ -25,9 +25,17 @@ namespace FunWithClassesWorksheet
         }
         public bool CheckRequirements(Applications app, HardDrive hardDrive, RAM ram)
         {
+            bool canRunProgram = false;
             if (hardDrive.availableStorage > app.requiredStorage && ram.totalGigabytes > app.requiredRam)
             {
+                canRunProgram = true;
                 Console.WriteLine("Your computer's hardware is sufficient to install and run the program.");
+                return canRunProgram;
+            }
+            else
+            {
+                canRunProgram = false;
+                return canRunProgram;
             }
         }
         public void InstallApplication(Applications application)
