@@ -11,5 +11,11 @@ namespace FunWithClassesWorksheet
         //member variables
         double totalGigabytes;
         string brand;
+
+        //constructor 
+        public RAM()
+        {
+
+        }
     }
 }

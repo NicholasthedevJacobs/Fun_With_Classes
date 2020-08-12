@@ -9,10 +9,23 @@ namespace FunWithClassesWorksheet
     class Motherboard
     {
         //member variables
-        string manufacturer;
-        CPU processor;
-        RAM temporaryMemory;
-        HardDrive storage;
-        GPU graphics;
+        public string manufacturer;
+        public CPU processor;
+        public RAM temporaryMemory;
+        public HardDrive storage;
+        public GPU graphics;
+
+        //constructor
+        public Motherboard(string manufacturer, CPU processor, RAM temporaryMemory, HardDrive hardDrive, GPU gpu)
+        {
+            this.manufacturer = manufacturer;
+            this.processor = processor;
+            this.temporaryMemory = temporaryMemory;
+            storage = hardDrive;
+            graphics = gpu;
+        }
     }
+
+    //constructor
+
 }
