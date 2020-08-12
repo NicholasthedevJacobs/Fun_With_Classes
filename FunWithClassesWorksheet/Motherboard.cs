@@ -31,16 +31,7 @@ namespace FunWithClassesWorksheet
         public void InstallApplication(Applications application)
         {
 
-            if (temporaryMemory.totalGigabytes > application.requiredRam)
-            {
-                storage.applicationsInHardDrive.Add(application);
-            }
-            else
-            {
-                Console.WriteLine("Not enough RAM to run program");
-            }
-
-
+            
         }
     }
 

@@ -11,7 +11,8 @@ namespace FunWithClassesWorksheet
         static void Main(string[] args)
         {
             //Motherboard motherboard = new Motherboard();
-            
+            //CPU cpu = new CPU();
+            //cpu.CheckRequirements();
         }
     }
 }
